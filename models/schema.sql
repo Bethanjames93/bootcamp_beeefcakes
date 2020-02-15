@@ -14,6 +14,9 @@ USE drip_advisordb;
 
 CREATE TABLE comments (
     id INT NOT NULL AUTO_INCREMENT,
-    comment  TEXT NULL,
-    PRIMARY KEY (id)
+    user_name VARCHAR(255) NOT NULL,
+    comment  TEXT NOT NULL,
+    brewery_name VARCHAR(255) NOT NULL,
+    rating INT NOT NULL,
+    PRIMARY KEY(id)
 );
