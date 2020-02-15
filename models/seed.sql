@@ -1,0 +1,2 @@
+INSERT INTO comments (user_name, comment, rating) VALUES ("Dave The Drinker", "This was a great place to drink", 5);
+INSERT INTO comments (user_name, comment, rating) VALUES ("Sally the sober", "Not for me", 2);
