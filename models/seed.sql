@@ -5,4 +5,8 @@ INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Boddin
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("JW Lees and Co", "Middleton Junction", "Manchester", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("BrewDog", "35 Peter St", "Manchester", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Track Brewing Company", "5 Sheffield Street", "Manchester", "");
+<<<<<<< HEAD
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Marbles Beer", "41 Williamson Street", "Manchester", "");
+=======
+INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Marbles Beer", "41 Williamson Street", "Manchester", "");
+>>>>>>> 4b3886469de7102e728d7e24b3f08663900ec91c
