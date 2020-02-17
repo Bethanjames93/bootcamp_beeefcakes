@@ -45,7 +45,7 @@ body, html {
   background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
   height: 80%;
   width: 70%;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 15%;
   margin-right: 15%;
   border-style: solid;
@@ -89,4 +89,19 @@ body, html {
   margin-right: 15%;
 }
 
+.navbar-light{
+  position:fixed;
+  bottom:0;
+  width: 100%;
+  background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
+  border-style: solid;
+  border-color: rgb(34, 38, 42);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.copyright{
+  margin-right: 50%;
+}
 
