@@ -15,7 +15,7 @@ CREATE TABLE comments (
     id INT NOT NULL AUTO_INCREMENT,
     user_name VARCHAR(255) NOT NULL,
     comment  TEXT NOT NULL,
-    brewery_name VARCHAR(255) NULL,
+    breweryId INT NOT NULL,
     rating INT NOT NULL,
     PRIMARY KEY(id)
     

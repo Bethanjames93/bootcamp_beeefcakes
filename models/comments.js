@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
   const Comments = sequelize.define("Comments", {
     user_name: DataTypes.STRING,
     comment: DataTypes.STRING,
-    brewery_name: DataTypes.STRING,
+    breweryId: DataTypes.INTEGER,
     rating: DataTypes.INTEGER
   }, { timestamps: false });
 

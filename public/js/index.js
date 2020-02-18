@@ -49,11 +49,11 @@ const breweryByCityAPI = {
   },
 };
 
-// Getting brewery comments by brewery_name, 
+// Getting brewery comments by breweryId, 
 const breweryCommentsAPI = {
-  getBreweriesComments: function (brewery_name) {
+  getBreweriesComments: function (breweryId) {
     return $.ajax({
-      url: "/api/breweries/brewery_name/:" + brewery_name,
+      url: "/api/breweries/breweryId/:" + breweryId,
       type: "GET"
     });
   },
