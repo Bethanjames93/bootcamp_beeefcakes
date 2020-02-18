@@ -5,9 +5,7 @@ INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Boddin
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("JW Lees and Co", "Middleton Junction", "Manchester", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("BrewDog", "35 Peter St", "Manchester", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Track Brewing Company", "5 Sheffield Street", "Manchester", "");
-<<<<<<< HEAD
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Marbles Beer", "41 Williamson Street", "Manchester", "");
-<<<<<<< HEAD
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Cloud Water Brew Co.", "Piccadilly Trading Estate", "Manchester", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Alphabet Brewing Company", "99 N Western St", "Manchester", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Wander Beyond Brewing", "99 N Western St", "Manchester", "");
@@ -82,4 +80,3 @@ INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Pilot 
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Caledonian Brewing", "42 Slateford Road", "Edinburgh", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Stewart Brewing", "Unit 5, 42 Dryden Road, Bilston Glen Ind Estate", "Loanhead", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Marbles Beer", "41 Williamson Street", "Manchester", "");
-
