@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
     address: DataTypes.STRING,
     city: DataTypes.STRING,
     postal_code: DataTypes.STRING
-  });
+  }, { timestamps: false });
 
   //Associate the brewery with many comments
   Breweries.associate = function (models) {
