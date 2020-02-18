@@ -78,3 +78,5 @@ INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Beer52
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Beergooder", "1-3 St Clome Street", "Edinburgh", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Pilot Beer", "22 St Jane St", "Edinburgh", "");
 INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Caledonian Brewing", "42 Slateford Road", "Edinburgh", "");
+INSERT INTO breweries (brewery_name, address, city, postal_code) VALUES ("Stewart Brewing", "Unit 5, 42 Dryden Road, Bilston Glen Ind Estate", "Loanhead", "");
+
