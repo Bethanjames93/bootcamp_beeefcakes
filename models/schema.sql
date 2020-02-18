@@ -5,10 +5,10 @@ USE drip_advisordb;
 
 CREATE TABLE breweries (
     id INT NOT NULL AUTO_INCREMENT,
-    brewery_name VARCHAR(255) NULL,
-    address VARCHAR(255) NULL,
-    city VARCHAR(255) NULL,
-    postal_code VARCHAR(255) NULL,
+    brewery_name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    postal_code VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
 CREATE TABLE comments (
