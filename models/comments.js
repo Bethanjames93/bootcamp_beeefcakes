@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
     comment: DataTypes.STRING,
     brewery_name: DataTypes.STRING,
     rating: DataTypes.INTEGER
-  });
+  }, { timestamps: false });
 
   //Associate each comment with a brewery
   Comments.associate = function (models) {
