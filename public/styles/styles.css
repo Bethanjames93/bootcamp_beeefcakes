@@ -4,6 +4,7 @@
 
 body, html {
   height: 100%;
+  background-image: url(../images/thumb-1920-252185.jpg);
 }
 
 .jumbotron-container{
@@ -59,7 +60,7 @@ body, html {
   border-radius: 15px;
 }
 
-.btn-primary{
+#log-in-button{
   width: 200px;
   height: 150px;
   margin-top: 150px;
@@ -89,9 +90,59 @@ body, html {
   margin-right: 15%;
 }
 
+.brewery-page-header{
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  border-color: black;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.brewery-container{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.w-90{
+  border-style: solid;
+  border-color: black;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.single-brewery-container{
+  background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
+  width: 40%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 7%;
+  float: left;
+  border-style: solid;
+  border-color: black;
+}
+
+.comments-container{
+  background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
+  width: 40%;
+  height: 80%;
+  margin-right: 10%;
+  margin-top: 7%;
+  float: right;
+  border-style: solid;
+  border-color: black;
+}
+
 .navbar-light{
-  position:fixed;
-  bottom:0;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
   border-style: solid;
