@@ -14,10 +14,10 @@ module.exports = function(app) {
     });
 
     // Get route for returning all comments associated with a brewery
-    app.get("/api/breweries/brewery_name/:brewery_name", function(req, res) {
+    app.get("/api/breweries/breweryId/:breweryId", function(req, res) {
       db.Breweries.findAll({
         where: {
-          brewery_name: req.params.brewery_name
+          id: req.params.breweryId
         },
         include: [db.Comments]
       })
