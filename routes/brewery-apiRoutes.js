@@ -1,11 +1,23 @@
 const db = require("../models");
 
 module.exports = function(app) {
-    // Get route for returning breweries of a certain city & including any associated comments
+    // Get route for returning all breweries of a certain city & including any associated comments
     app.get("/api/breweries/city/:city", function(req, res) {
-      db.Post.findAll({
+      db.Breweries.findAll({
         where: {
-          category: req.params.city
+          city: req.params.city
+        }
+      })
+        .then(function(dbBreweries) {
+          res.json(dbBreweries);
+        });
+    });
+
+    // Get route for returning all comments associated with a brewery
+    app.get("/api/breweries/breweryId/:breweryId", function(req, res) {
+      db.Breweries.findAll({
+        where: {
+          id: req.params.breweryId
         },
         include: [db.Comments]
       })

@@ -1,11 +1,11 @@
 //sequelize define comments
 module.exports = function (sequelize, DataTypes) {
-  const Comments = sequelize.define("comments", {
+  const Comments = sequelize.define("Comments", {
     user_name: DataTypes.STRING,
     comment: DataTypes.STRING,
-    brewery_name: DataTypes.STRING,
+    breweryId: DataTypes.INTEGER,
     rating: DataTypes.INTEGER
-  });
+  }, { timestamps: false });
 
   //Associate each comment with a brewery
   Comments.associate = function (models) {
@@ -17,7 +17,6 @@ module.exports = function (sequelize, DataTypes) {
       }
     });
   };
-
 
   return Comments;
 };
