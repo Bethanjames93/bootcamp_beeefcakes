@@ -1,0 +1,14 @@
+language: node_js
+node_js: "8"
+branches:
+  only:
+  - master
+cache:
+  directories:
+    - node_modules
+before_install:
+  - mysql -e 'CREATE DATABASE drip_advisordb;'
+deploy:
+  provider: heroku
+  api_key:
+    secure: "94c0adb5-1bd9-4835-a8fd-0703d59d9297"
