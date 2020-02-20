@@ -7,6 +7,7 @@ cache:
   directories:
     - node_modules
 before_install:
+  - npm install
   - mysql -e 'CREATE DATABASE drip_advisordb;'
 deploy:
   provider: heroku
