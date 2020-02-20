@@ -8,7 +8,7 @@ cache:
     - node_modules
 before_install:
   - npm install
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS testdb;'
+  - mysql -e 'CREATE DATABASE testdb;'
 deploy:
   provider: heroku
   api_key:
