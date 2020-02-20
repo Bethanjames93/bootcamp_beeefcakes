@@ -1,24 +1,12 @@
-//------------------ JQuery HTML page Elements RENAME BASED ON ACTUAL HTML ID's------------------
-
-//brewery search location field & id !!-------RENAME BASED ON HTML ID'S--------!!
+//------------------ JQuery HTML page Elements RENAME BASED ON ACTUAL HTML ID's-----------------//
 const $searchbyCity = $("#searchLocation");
-//search location submit button !!-------RENAME BASED ON HTML ID'S--------!!
 const $searchSubmitBtn = $("#search-location-button");
-
-//show comments button !!-------RENAME BASED ON HTML ID'S--------!!
-const $showCommentsBtn = $("#submit");
-
-//comments text field & id !!-------RENAME BASED ON HTML ID'S--------!!
-const $commentsText = $("#example-text");
-//comments username field & id !!-------RENAME BASED ON HTML ID'S--------!!
-const $username = $("#example-description");
+const $showCommentsBtn = $("#show-comments");
+const $commentsText = $("#comment-text");
+const $username = $("#user-name");
 //comments rating field & id !!-------RENAME BASED ON HTML ID'S--------!!
-const $rating = $("#example-description");
-//comments submit button !!-------RENAME BASED ON HTML ID'S--------!!
-const $commentsSubmitBtn = $("#submit");
-
-//div to hold comments !!-------RENAME BASED ON HTML ID'S--------!!
-const $commentsList = $("#example-list");
+// const $rating = $("#example-description");
+const $commentsSubmitBtn = $("#add-comment-button");
 
 // ------------------API functions for the comments, these link to the "comments-apiRoutes"------------------
 
