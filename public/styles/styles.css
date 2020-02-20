@@ -53,6 +53,11 @@ body, html {
   border-color: black;
   border-radius: 25px;
   float: left;
+  text-align: center;
+}
+
+h4{
+  margin-top: 10%;
 }
 
 .btn-secondary{
@@ -68,6 +73,25 @@ body, html {
   margin-right: 10%;
   font-size: 4ch;
   border-radius: 15px;
+}
+
+#log-in-form{
+  padding-top: 300px;
+  display: none;
+}
+
+#create-account-form{
+  display: none;
+}
+
+.form-control{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.form-group{
+  margin-top: 150px;
 }
 
 .btn-success{
