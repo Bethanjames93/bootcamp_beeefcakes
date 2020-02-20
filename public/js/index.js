@@ -1,9 +1,9 @@
 //------------------ JQuery HTML page Elements RENAME BASED ON ACTUAL HTML ID's------------------
 
 //brewery search location field & id !!-------RENAME BASED ON HTML ID'S--------!!
-const $searchbyCity = $("#example-description");
+const $searchbyCity = $("#searchLocation");
 //search location submit button !!-------RENAME BASED ON HTML ID'S--------!!
-const $searchSubmitBtn = $("#submit");
+const $searchSubmitBtn = $("#search-location-button");
 
 //show comments button !!-------RENAME BASED ON HTML ID'S--------!!
 const $showCommentsBtn = $("#submit");
@@ -43,7 +43,7 @@ const commentsAPI = {
 const breweryByCityAPI = {
   getBreweriesByCity: function (city) {
     return $.ajax({
-      url: "/api/breweries/city/:" + city,
+      url: "/api/breweries/city/" + city,
       type: "GET"
     });
   },
@@ -53,7 +53,7 @@ const breweryByCityAPI = {
 const breweryCommentsAPI = {
   getBreweriesComments: function (breweryId) {
     return $.ajax({
-      url: "/api/breweries/breweryId/:" + breweryId,
+      url: "/api/breweries/breweryId/" + breweryId,
       type: "GET"
     });
   },
@@ -66,7 +66,7 @@ const breweryCommentsAPI = {
 // Searching by city
 const handleSearch = function (event) {
   event.preventDefault();
-  const city = $searchbyCity.val().trim(),
+  const city = $searchbyCity.val().trim();
   //if city is blank alert user
   if (!(city)) {
     alert("You must enter a city to search");
@@ -109,3 +109,5 @@ const handleComments = function (event) {
 $searchSubmitBtn.on("click", handleSearch);
 $showCommentsBtn.on("click", showComments);
 $commentsSubmitBtn.on("click", handleComments);
+
+
