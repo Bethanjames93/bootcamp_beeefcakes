@@ -1,0 +1,41 @@
+<div class="brewery-page-header">
+    </div>
+
+    <div class="brewery-container">
+        <div class="single-brewery-container">
+    <li>
+        {{#each this}}
+        <div class="brewery-container">
+            <div class="card w-90">
+                <div class="card-body">
+                    <h5 class="card-title">{{brewery_name}}</h5>
+                    <p class="card-text">{{address}}</p>
+                    <p class="card-text">{{city}}</p>
+                    <p class="card-text">{{postal_code}}</p>
+                </div>
+            </div>
+    </li>
+        </div>
+        <div class="comments-container">
+            <h1>comments</h1>
+            <li>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{{user_name}}</h5>
+                        </div>
+                        <p class="mb-1">{{comment}}</p>
+                        <p class="mb-1">{{rating}}</p>
+                    </a>
+                </div>
+        {{/each}}
+            </li>
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Input group example"
+                    aria-describedby="btnGroupAddon" placeholder="Insert new review!" id="comment-text">
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" id="add-comment-button" class="btn btn-secondary">Comment</button>
+            </div>
+        </div>
+    </div>
