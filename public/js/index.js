@@ -110,4 +110,4 @@ $searchSubmitBtn.on("click", handleSearch);
 $showCommentsBtn.on("click", showComments);
 $commentsSubmitBtn.on("click", handleComments);
 
-module.exports = apiRoutes;
+
