@@ -1,0 +1,17 @@
+<div class="brewery-page-header">
+    </div>
+
+    <li>
+        {{#each this}}
+        <div class="brewery-container">
+            <div class="card w-90">
+                <div class="card-body">
+                    <h5 class="card-title">{{brewery_name}}</h5>
+                    <p class="card-text">{{address}}</p>
+                    <p class="card-text">{{city}}</p>
+                    <p class="card-text">{{postal_code}}</p>
+                    <button type="button" class="btn btn-warning" data-id="{{id}}" id="show-comments">Show comments</button>
+                </div>
+            </div>
+        {{/each}}
+    </li>

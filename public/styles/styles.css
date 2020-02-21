@@ -2,15 +2,16 @@
   line-height: 2.5;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   background-image: url(../images/thumb-1920-252185.jpg);
 }
 
-.jumbotron-container{
+.jumbotron-container {
   background-image: url(../images/Image\ from\ iOS.jpg);
   text-align: center;
-  height: 100%; 
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +19,7 @@ body, html {
   height: 100%;
 }
 
-.jumbotron-fluid{
+.jumbotron-fluid {
   float: left;
   background-image: url(../images/logo.jpg);
   width: 100%;
@@ -33,7 +34,7 @@ body, html {
   border-right: 0;
 }
 
-.login-parent-div{
+.login-parent-div {
   background-image: url(../images/thumb-1920-252185.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +43,7 @@ body, html {
   height: 100%;
 }
 
-.search-box-and-login{
+.search-box-and-login {
   background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
   height: 80%;
   width: 70%;
@@ -56,16 +57,16 @@ body, html {
   text-align: center;
 }
 
-h4{
+h4 {
   margin-top: 10%;
 }
 
-.btn-secondary{
+.btn-secondary {
   margin-right: 20px;
   border-radius: 15px;
 }
 
-#log-in-button{
+#log-in-button {
   width: 200px;
   height: 150px;
   margin-top: 150px;
@@ -75,26 +76,26 @@ h4{
   border-radius: 15px;
 }
 
-#log-in-form{
+#log-in-form {
   padding-top: 300px;
   display: none;
 }
 
-#create-account-form{
+#create-account-form {
   display: none;
 }
 
-.form-control{
+.form-control {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
 }
 
-.form-group{
+.form-group {
   margin-top: 150px;
 }
 
-.btn-success{
+.btn-success {
   width: 200px;
   height: 150px;
   margin-top: 150px;
@@ -103,18 +104,18 @@ h4{
   border-radius: 15px;
 }
 
-.form-control{
+.form-control {
   padding-right: 400px;
 }
 
-.btn-toolbar{
+.btn-toolbar {
   margin-top: 15%;
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.brewery-page-header{
+.brewery-page-header {
   width: 100%;
   height: 300px;
   background-image: url(../images/logo.jpg);
@@ -128,13 +129,13 @@ h4{
   border-left: 0;
 }
 
-.brewery-container{
+.brewery-container {
   height: 100%;
   width: 100%;
   margin-bottom: 80px;
 }
 
-.w-90{
+.w-90 {
   border-style: solid;
   border-color: black;
   margin-top: 10px;
@@ -142,7 +143,7 @@ h4{
   margin-right: 5%;
 }
 
-.single-brewery-container{
+.single-brewery-container {
   background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
   width: 40%;
   height: 80%;
@@ -153,7 +154,7 @@ h4{
   border-color: black;
 }
 
-.comments-container{
+.comments-container {
   background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
   width: 40%;
   height: 80%;
@@ -164,7 +165,7 @@ h4{
   border-color: black;
 }
 
-.navbar-light{
+.navbar-light {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -176,7 +177,73 @@ h4{
   border-right: 0;
 }
 
-.copyright{
+.copyright {
   margin-right: 50%;
 }
 
+#mobile-jumbotron{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    background-image: none;
+  }
+  .jumbotron-fluid {
+    display: none;
+  }
+  .login-parent-div {
+    background-image: none;
+  }
+  .search-box-and-login{
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #search-brewery-button, #create-account-button, #search-brewery-button{
+    margin: 0;
+  }
+  #search-brewery-button{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+  }
+  #log-in-button, #create-account-button{
+    margin-top: 10%;
+  }
+  #create-account-button{
+    margin-left: 45px;
+  }
+  .form-group{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .form-control{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .copyright {
+    float: right;
+    margin: 0;
+  }
+  #mobile-jumbotron {
+    display: inline;
+    background-image: none;
+    margin: 0;
+    height: 20%;
+    text-align: center;
+    opacity: 0.7;
+    border-style: solid;
+    border-color: black;
+    margin-top: 200px;
+  }
+  .navbar-light{
+    opacity: 0.7;
+    height: 10%;
+  }
+}
