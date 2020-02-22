@@ -2,81 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script src="https://kit.fontawesome.com/c789f3d2c3.js" crossorigin="anonymous"></script>
-    <script src="./onclickfunctionsforhtml.js"></script>
-    <title>Drip advisor</title>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://kit.fontawesome.com/c789f3d2c3.js" crossorigin="anonymous"></script>
+  <script src="./onclickfunctionsforhtml.js"></script>
+  <title>Drip advisor</title>
 </head>
 
 <body>
-    <div id="mobile-jumbotron" class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4"><h1><strong>Drip Advisor</strong></h1>
-        </div>
+  <div id="mobile-jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">
+        <h1><strong>Drip Advisor</strong></h1>
+    </div>
+  </div>
+  <div class="jumbotron-container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
       </div>
-    <div class="jumbotron-container">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-            </div>
-        </div>
     </div>
+  </div>
 
-    <div class="login-parent-div">
-        <div class="search-box-and-login">
-            <h4 id="search-bar-header">Enter a location to find all breweries in that area</h4>
-            <div id="search-brewery-button" class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <button type="button" id="search-location-button" class="btn btn-secondary">Search</button>
-                </div>
-                <div class="input-group">
-                    <input id="brewery-search-bar" type="text" class="form-control" aria-label="Input group example"
-                        aria-describedby="btnGroupAddon" id="searchLocation" placeholder="example: Manchester">
-                </div>
-                <button type="button" id="log-in-button" class="btn btn-primary" onclick="logInFunc()">Log in</button>
-                <button type="button" id="create-account-button" class="btn btn-success" onclick="createAccountFunc()">Create account</button>
-            </div>
-            <form id="log-in-form">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Username</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Log in</button>
-                <button type="button" class="btn btn-primary return-button" onclick="exit()">Return</button>
-
-              </form>
-              <form id="create-account-form">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Username</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Create account</button>
-                <button type="button" class="btn btn-primary return-button" onclick="exit()">Return</button>
-              </form>
+  <div class="login-parent-div">
+    <div class="search-box-and-login">
+      <h4 id="search-bar-header">Enter a location to find all breweries in that area</h4>
+      <div id="search-brewery-button" class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+          <button type="button" id="search-location-button" class="btn btn-secondary">Search</button>
         </div>
-    </div>
+        <div class="input-group">
+          <input id="brewery-search-bar" type="text" class="form-control" aria-label="Input group example"
+            aria-describedby="btnGroupAddon" id="searchLocation" placeholder="example: Manchester">
+        </div>
+        <button type="button" id="log-in-button" class="btn btn-primary" onclick="logInFunc()">Log in</button>
+        <button type="button" id="create-account-button" class="btn btn-success" onclick="createAccountFunc()">Create
+          account</button>
+      </div>
+      <form id="log-igit n-form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone
+            else.</small>
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Log in</button>
+        <button type="button" class="btn btn-primary return-button" onclick="exit()">Return</button>
 
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./images/logo.jpg" width="70" height="30" class="d-inline-block align-top" alt=""> dripadvisor</a>
-            <p class="copyright">copyright&#9400;</p>                
-    </nav>
+      </form>
+      <form id="create-account-form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Create account</button>
+        <button type="button" class="btn btn-primary return-button" onclick="exit()">Return</button>
+      </form>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./images/logo.jpg" width="70" height="30" class="d-inline-block align-top" alt=""> dripadvisor</a>
+    <p class="copyright">copyright&#9400;</p>
+  </nav>
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./js/index.js"></script>
+
 </html> -->
+
