@@ -11,4 +11,4 @@ before_install:
 deploy:
   provider: heroku
   api_key:
-    secure: "YOUR ENCRYPTED API KEY"
+    secure: "94c0adb5-1bd9-4835-a8fd-0703d59d9297"
