@@ -33,7 +33,11 @@ const breweryByCityAPI = {
     return $.ajax({
       url: "/api/breweries/city/" + city,
       type: "GET"
-    });
+    })
+    // // .done(function(data){
+    // //   return data
+      
+    // })
   },
 };
 
@@ -61,15 +65,26 @@ const handleSearch = function (event) {
     return;
   }
   //run the the get breweries method, passing the city search text as the argument (which will get added to the API route)
-  breweryByCityAPI.getBreweriesByCity(city);
+  
+  breweryByCityAPI.getBreweriesByCity(city).then(function(breweries) {
+    console.log("This is the breweries data: ", breweries)
+    $.ajax({
+      url: "/breweries",
+      data: breweries
+    })
+    // window.location.replace("/breweries");
+  });
 };
 
 //Showing comments
 const showComments = function (event) {
   event.preventDefault();
   const brewery_name = $showCommentsBtn.val();
+  console.log("The button has been clicked")
   //run the get comments by brewery method, passing the brewery name as the argument (which will get added to the API route)
-  breweryCommentsAPI.getBreweriesComments(brewery_name);
+  breweryCommentsAPI.getBreweriesComments(brewery_name).then(function() {
+    window.location.replace("/comments");
+  });
 };
 
 //submitting comments
