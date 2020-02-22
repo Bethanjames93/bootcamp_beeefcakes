@@ -25,8 +25,9 @@ module.exports = function(app) {
   app.get("/home", function(req, res) {
       res.render("index");
     });
-  app.get("/brewery", function(req, res) {
-    res.render("brewery");
+  app.get("/breweries", function(req, res) {
+    console.log("this is the request ", req.data);
+    res.render("brewery", req.data);
   });
   app.get("/comments", function(req, res) {
     res.render("comments");
