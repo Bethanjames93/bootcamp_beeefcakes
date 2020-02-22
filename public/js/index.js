@@ -61,15 +61,20 @@ const handleSearch = function (event) {
     return;
   }
   //run the the get breweries method, passing the city search text as the argument (which will get added to the API route)
-  breweryByCityAPI.getBreweriesByCity(city);
+  breweryByCityAPI.getBreweriesByCity(city).then(function() {
+    window.location.replace("/brewery");
+  });
 };
 
 //Showing comments
 const showComments = function (event) {
   event.preventDefault();
   const brewery_name = $showCommentsBtn.val();
+  console.log("The button has been clicked")
   //run the get comments by brewery method, passing the brewery name as the argument (which will get added to the API route)
-  breweryCommentsAPI.getBreweriesComments(brewery_name);
+  breweryCommentsAPI.getBreweriesComments(brewery_name).then(function() {
+    window.location.replace("/comments");
+  });
 };
 
 //submitting comments
