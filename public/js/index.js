@@ -33,7 +33,11 @@ const breweryByCityAPI = {
     return $.ajax({
       url: "/api/breweries/city/" + city,
       type: "GET"
-    });
+    })
+    // // .done(function(data){
+    // //   return data
+      
+    // })
   },
 };
 
@@ -61,8 +65,14 @@ const handleSearch = function (event) {
     return;
   }
   //run the the get breweries method, passing the city search text as the argument (which will get added to the API route)
-  breweryByCityAPI.getBreweriesByCity(city).then(function() {
-    window.location.replace("/brewery");
+  
+  breweryByCityAPI.getBreweriesByCity(city).then(function(breweries) {
+    console.log("This is the breweries data: ", breweries)
+    $.ajax({
+      url: "/breweries",
+      data: breweries
+    })
+    // window.location.replace("/breweries");
   });
 };
 
