@@ -18,7 +18,7 @@
 
     <div class="brewery-container">
         <div class="single-brewery-container">
-            <h1>brewery</h1>
+            <h1><strong>BREWERY NAME</strong></h1>
             <ul class="list-group">
                 <li class="list-group-item">Cras justo odio</li>
                 <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -27,18 +27,22 @@
                 <li class="list-group-item">Vestibulum at eros</li>
             </ul>
         </div>
-        <div class="comments-container">
-            <h1>comments</h1>
-            <li>
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">username : bob</h5>
-                            <small>3 days ago</small>
-                        </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
-                            varius blandit.</p>
-                    </a>
+        <div class="comments-container" style="overflow: scroll">
+            <h1><strong>REVIEWS</STRong></h1>
+            <ul>
+                <li>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">username : bob</h5>
+                                <small>18 hours ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+                                risus
+                                varius blandit.</p>
+                        </a>
+                </li>
+                <li>
                     <a href="#" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">username : jess</h5>
@@ -47,33 +51,40 @@
                         <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
                             varius blandit.</p>
                     </a>
+                </li>
+                <li>
                     <a href="#" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">username : ben</h5>
-                            <small class="text-muted">3 days ago</small>
+                            <h5 class="mb-1">username : frank</h5>
+                            <small class="text-muted">2 weeks ago</small>
                         </div>
                         <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
                             varius blandit.</p>
                     </a>
+                </li>
+                <li>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">username : boris</h5>
+                                <small class="text-muted">3 years ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                                varius blandit.</p>
+                        </a>
+                    </li>
+            </ul>
+            <div id="comment-box">
+                <div class="d-flex w-100 justify-content-between">
+                    <div class="input-group">
+                        <input type="text" class="form-control review-input-box" aria-label="Input group example"
+                            aria-describedby="btnGroupAddon" placeholder="Insert new review!">
+                    </div>
+                    <div class="btn-group mr-2 enter-new-review-button" role="group" aria-label="First group">
+                        <button type="button" id="add-comment-button" class="btn btn-secondary">Comment</button>
+                    </div>
                 </div>
-            </li>
-            <div class="input-group">
-                <input type="text" class="form-control" aria-label="Input group example"
-                    aria-describedby="btnGroupAddon" placeholder="Insert new review!">
-            </div>
-            <div class="btn-group mr-2" role="group" aria-label="First group">
-                <button type="button" id="add-comment-button" class="btn btn-secondary">Comment</button>
             </div>
         </div>
-    </div>
-
-
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./images/logo.jpg" width="70" height="30" class="d-inline-block align-top" alt="">
-            dripadvisor</a>
-        <p class="copyright">copyright&#9400;</p>
-    </nav>
 </body>
 
 </html>

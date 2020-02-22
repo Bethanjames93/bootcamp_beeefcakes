@@ -6,8 +6,15 @@ body,
 html {
   height: 100%;
   background-image: url(../images/thumb-1920-252185.jpg);
+  font-family: 'Cinzel';
 }
-
+h1{
+  font-family: 'Cinzel';
+}
+li, ul{
+  list-style: none;
+  padding: 0;
+}
 .jumbotron-container {
   background-image: url(../images/Image\ from\ iOS.jpg);
   text-align: center;
@@ -69,11 +76,12 @@ h4 {
 #log-in-button {
   width: 200px;
   height: 150px;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-left: 15%;
   margin-right: 10%;
   font-size: 4ch;
   border-radius: 15px;
+
 }
 
 #log-in-form {
@@ -83,6 +91,16 @@ h4 {
 
 #create-account-form {
   display: none;
+}
+
+#brewery-search-bar {
+  margin: 0;
+  float: right;
+  margin-top: 10%;
+}
+
+.mr-2 {
+  margin-left: 40%;
 }
 
 .form-control {
@@ -98,7 +116,7 @@ h4 {
 .btn-success {
   width: 200px;
   height: 150px;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-right: 15%;
   font-size: 4ch;
   border-radius: 15px;
@@ -109,7 +127,7 @@ h4 {
 }
 
 .btn-toolbar {
-  margin-top: 15%;
+  margin-top: 8%;
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
@@ -127,12 +145,14 @@ h4 {
   border-top: 0;
   border-right: 0;
   border-left: 0;
+  font-family: 'Cinzel';
 }
 
 .brewery-container {
   height: 100%;
   width: 100%;
   margin-bottom: 80px;
+  font-family: 'Cinzel';
 }
 
 .w-90 {
@@ -152,6 +172,7 @@ h4 {
   float: left;
   border-style: solid;
   border-color: black;
+  font-family: 'Cinzel';
 }
 
 .comments-container {
@@ -163,6 +184,7 @@ h4 {
   float: right;
   border-style: solid;
   border-color: black;
+  font-family: 'Cinzel';
 }
 
 .navbar-light {
@@ -175,6 +197,7 @@ h4 {
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
+  font-family: 'Cinzel';
 }
 
 .copyright {
@@ -183,6 +206,15 @@ h4 {
 
 #mobile-jumbotron{
   display: none;
+}
+.review-input-box{
+ margin: 0;
+ width: 50%;
+ float: left;
+}
+
+.enter-new-review-button{
+  margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -205,17 +237,29 @@ h4 {
   #search-brewery-button, #create-account-button, #search-brewery-button{
     margin: 0;
   }
+  .mr-2{
+    margin: 0;
+  }
   #search-brewery-button{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 20%;
   }
+  #search-location-button{
+    margin-left: 100%;
+  }
+  #brewery-search-bar{
+    width: 300px;
+    text-align: center;
+    margin-top: 10%;
+  }
   #log-in-button, #create-account-button{
     margin-top: 10%;
   }
   #create-account-button{
     margin-left: 45px;
+    margin-bottom: 60px;
   }
   .form-group{
     width: 80%;
@@ -246,4 +290,62 @@ h4 {
     opacity: 0.7;
     height: 10%;
   }
+  .brewery-page-header{
+    display: none;
+  }
+  .list-group-item{
+    font-size: 2ch;
+  }
+  h5{
+    font-size: 2ch;
+    font-family: 'Cinzel';
+  }
+  h1{
+    font-family: 'Cinzel';
+    }
+    .single-brewery-container{
+      width: 100%;
+      margin: 0;
+      border: none;
+      text-align: center;
+      height: 60%;
+      font-family: 'Cinzel';
+      border-style: solid;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-color: black;
+      margin-bottom: 10%;
+      text-align: center;
+    }
+    .comments-container{
+      width: 100%;
+      margin: 0;
+      border: none;
+      text-align: center;
+      height: 100%;
+      font-family: 'Cinzel';
+      overflow: scroll;
+      text-align: center;
+    }
+    #comment-box{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-image: url(../images/light_noise_diagonal/light_noise_diagonal.png);
+      border-style: solid;
+      border-color: rgb(34, 38, 42);
+      border-bottom: 0;
+      border-left: 0;
+      border-right: 0;
+      height: 10%;
+      font-family: 'Cinzel';
+    }
+    .d-flex{
+      margin-top: 2%;
+      margin-left: 5%;
+    }
+    .single-brewery-container{
+      margin: 0;
+    }
 }
