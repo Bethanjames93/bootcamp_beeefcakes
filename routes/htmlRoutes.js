@@ -22,7 +22,7 @@
 
 module.exports = function(app) {
   // Load index page
-  app.get("/home", function(req, res) {
+  app.get("/", function(req, res) {
       res.render("index");
     });
   app.get("/breweries", function(req, res) {
